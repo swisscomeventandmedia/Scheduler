@@ -224,7 +224,6 @@ class Task
         /** @var TaskInterface $task */
         $task = $objectManager->get($this->implementation, $this);
         $task->execute($this->arguments);
-        $this->markAsRun();
     }
 
     /**
